@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
+import Button from './Button'
 
-export default function CreateEntry () {
+export default function CreateEntry ({ addData }) {
+    const [entry, setEntry] = useState('')
+
     return (
         <section>
-            <form>
-                <InputStyled/>
+            <form onSubmit={handleSubmit}>
+                <InputStyled
+                type="text"
+                name="entry"
+                value={entry}
+                onChange={(event) => setEntry(event.target.value)}
+                />
+                <Button/>
             </form>
         </section>
     )
+    function handleSubmit(event) {
+        event.preventDefault()
+        addData(entry)
+        setEntry('')
+      }
+
 }
 
 const InputStyled = styled.input`

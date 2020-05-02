@@ -1,12 +1,12 @@
 import React from 'react'
 import CreateEntry from './CreateEntry'
-import Button from './Button'
+import EntriesAll from './EntriesAll'
 
 export default function App () {
     return (
         <>
         <CreateEntry/>
-        <Button/>
+        <EntriesAll/>
         </>
     )
 }
