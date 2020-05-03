@@ -12,10 +12,16 @@ export default createGlobalStyle`
     background: #FE5960;
     margin: 0;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   p {
     line-height: 150%;
+    font-size: 18px;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 18px;
   }
 `

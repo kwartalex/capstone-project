@@ -17,5 +17,11 @@ const EntryStyled = styled.section`
     margin: 20px auto 20px;
     border: none;
     width: 60vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 `
   
