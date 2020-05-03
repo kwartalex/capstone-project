@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function EntriesAll () {
+export default function EntriesAll ({entries}) {
     return (
-        
-        <section>
-               <EntryStyled>Lorem</EntryStyled>
-        </section>
+        <ul>
+            {entries && entries.map((entry) => (
+                <li key={entry.name}>
+                   <EntryStyled>{entry}</EntryStyled> 
+                </li>
+            ))}
+        </ul>
     )
 }
 
@@ -15,3 +18,4 @@ const EntryStyled = styled.section`
     border: none;
     width: 60vw;
 `
+  

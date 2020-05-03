@@ -2,28 +2,29 @@ import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import Button from './Button'
 
-export default function CreateEntry ({ addData }) {
-    const [entry, setEntry] = useState('')
+export default function CreateEntry ({ savedEntries }) {
 
+    const [entry, setEntry] = useState('')
+    
     return (
         <section>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(event) => {handleSubmit(event, entry)}}>
                 <InputStyled
                 type="text"
                 name="entry"
-                value={entry}
+                //value={entry}
                 onChange={(event) => setEntry(event.target.value)}
-                />
+                />{console.log(entry)}
                 <Button/>
             </form>
         </section>
     )
-    function handleSubmit(event) {
-        event.preventDefault()
-        addData(entry)
-        setEntry('')
-      }
 
+    function handleSubmit(event, entry) {
+        event.preventDefault()
+        savedEntries(entry)
+        //setEntry('')
+      }
 }
 
 const InputStyled = styled.input`
