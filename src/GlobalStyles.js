@@ -11,7 +11,7 @@ export default createGlobalStyle`
     color: #FFFFFF;
     background: #FE5960;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
   }
 
