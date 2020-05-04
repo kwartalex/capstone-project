@@ -16,8 +16,8 @@ const ButtonStyled = styled.button`
     padding: 0.5rem;
     margin: 20px auto 10px;
     width: 10rem;
-    background: #FF8B91;
-    color: #FFFFFF;
+    background: var(--secondary);
+    color: var(--quaternary);
     font-size: 18px;
     border: none;
 `

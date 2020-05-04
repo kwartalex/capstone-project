@@ -5,14 +5,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root{
+    --primary: #FE5960; {/* pink */}
+    --secondary: #FF8B91; {/* rosa */}
+    --tertiary: #fff7f7; {/* offwhite */}
+    --quaternary: #FFFFFF; {/* white */}
+    --quinary: #495057; {/* grey */}
+  }
+
   body {
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
-    background: #FE5960;
+    color: var(--quaternary);
+    background: var(--primary);
     margin: 0;
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
+    overflow: scroll;
   }
 
   p {

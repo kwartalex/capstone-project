@@ -2,28 +2,29 @@ import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import Button from './Button'
 
-export default function CreateEntry ({ savedEntries }) {
+export default function CreateEntry ({ handleSubmit }) {
 
     const [entry, setEntry] = useState('')
     
     return (
         <section>
-            <form onSubmit={(event) => {handleSubmit(event, entry)}}>
+            <form onSubmit={onSubmit}>
                 <InputStyled
                 type="text"
                 name="entry"
                 placeholder="My favorite moment of the day was when ..."
                 onChange={(event) => setEntry(event.target.value)}
-                />{console.log(entry)}
+                value={entry}
+                />
                 <Button/>
             </form>
         </section>
     )
 
-    function handleSubmit(event, entry) {
+    function onSubmit(event){
         event.preventDefault()
-        savedEntries(entry)
-      }
+        handleSubmit(entry)
+    }
 }
 
 const InputStyled = styled.textarea`
@@ -31,14 +32,15 @@ const InputStyled = styled.textarea`
     align-items: center;
     justify-content: center;
     margin: 100px auto 10px;
-    border: 2px solid #fff7f7;
-    background: #fff7f7;
+    border: 2px solid var(--tertiary);
+    background: var(--tertiary);
     color: #495057;
     border-radius: 4px;
     height: 40vh;
     width: 60vw;
     padding: 20px;
     font-size: 18px;
+    font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
     overflow: hidden;
