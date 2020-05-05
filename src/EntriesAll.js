@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function EntriesAll ({entries}) {
+export default function EntriesAll ({entries, onDeleteClick}) {
     return (
         <ul>
             {entries && entries.map((entry) => (
                 <li key={entry.name}>
                    <EntryStyled>{entry}</EntryStyled> 
+                   <span onClick={() => onDeleteClick(entry.name)}>x</span>
                 </li>
             ))}
         </ul>

@@ -9,7 +9,8 @@ export default function CreateEntry ({ handleSubmit }) {
     return (
         <section>
             <form onSubmit={onSubmit}>
-                <InputStyled
+                <InputStyled 
+                //autoFocus={true}
                 type="text"
                 name="entry"
                 placeholder="My favorite moment of the day was when ..."
@@ -24,6 +25,7 @@ export default function CreateEntry ({ handleSubmit }) {
     function onSubmit(event){
         event.preventDefault()
         handleSubmit(entry)
+        setEntry('')
     }
 }
 
