@@ -11,6 +11,8 @@ export default createGlobalStyle`
     --tertiary: #fff7f7; {/* offwhite */}
     --quaternary: #FFFFFF; {/* white */}
     --quinary: #495057; {/* grey */}
+    --senary: #ffc942; {/* orange */}
+
   }
 
   body {

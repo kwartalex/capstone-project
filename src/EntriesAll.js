@@ -16,8 +16,8 @@ export default function EntriesAll ({entries, onDeleteClick}) {
 
 const EntryStyled = styled.section`
     margin: 20px auto 20px;
+    padding: 0 40px 0;
     border: none;
-    width: 70vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
