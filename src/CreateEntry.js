@@ -41,17 +41,16 @@ const InputStyled = styled.textarea`
     background: var(--tertiary);
     color: var(--quinary);
     caret-color: var(--primary);
-    caret-size: 8px;
     border-radius: 8px;
     height: 40vh;
     width: 64vw;
     padding: 20px;
     font-size: 18px;
-    font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+    font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
     overflow: auto;
-    white-space: nowrap;
+    white-space: normal;
     text-overflow: ellipsis;
     resize: none;
     // &:focus{

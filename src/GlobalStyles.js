@@ -21,7 +21,7 @@ export default createGlobalStyle`
     color: var(--quaternary);
     background: var(--primary);
     margin: 0;
-    font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+    font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
     overflow: scroll;
   }
