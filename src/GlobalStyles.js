@@ -24,11 +24,6 @@ export default createGlobalStyle`
     overflow: scroll;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
   p {
     line-height: 150%;
     font-size: 18px;

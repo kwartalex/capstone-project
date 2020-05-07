@@ -23,7 +23,8 @@ export default function App () {
     }
 
     function deleteEntry(deletedEntry) {
-        const index = entries.findIndex(entry => entry.name === deletedEntry);
-        setEntries([...entries.slice(0, index), ...entries.slice(index + 1)])
-    }
+        const index = entries.findIndex((entry) => entry === deletedEntry)
+        setEntries([...entries.slice(0, index, + 1)])
+      }
 }
+
