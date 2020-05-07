@@ -18,6 +18,7 @@ export default function CreateEntry ({ handleSubmit }) {
                 placeholder="My favorite moment of the day was when ..."
                 onChange={(event) => setEntry(event.target.value)}
                 value={entry}
+                required
                 />
                 <Button/>
             </form>
@@ -30,6 +31,9 @@ export default function CreateEntry ({ handleSubmit }) {
         setEntry('')
         inputRef.current.focus()
     }
+
+    // function resetColor() {
+    //     setColor(var(--senary))
 }
 
 const InputStyled = styled.textarea`
@@ -53,6 +57,10 @@ const InputStyled = styled.textarea`
     white-space: normal;
     text-overflow: ellipsis;
     resize: none;
+      
+    // &:required {
+    //     border-color: var(--senary);
+    //   }
     // &:focus{
     //     outline: 3px solid var(--primary);
     // }

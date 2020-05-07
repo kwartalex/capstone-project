@@ -23,7 +23,7 @@ const EntryStyled = styled.section`
     justify-content: center;
     margin: 20px auto 10px;
     width: 80vw;
-    padding: 20px;
+    padding: 16px;
     border: none;
     font-weight: 300;
     letter-spacing: 0.0625em;
