@@ -11,19 +11,22 @@ export default createGlobalStyle`
     --tertiary: #fff7f7; {/* offwhite */}
     --quaternary: #FFFFFF; {/* white */}
     --quinary: #495057; {/* grey */}
-    --senary: #ffc942; {/* orange */}
+    --senary: #ffc942; {/* plum */}
 
   }
 
   body {
-    display: flex;
-    justify-content: center;
     color: var(--quaternary);
     background: var(--primary);
     margin: 0;
-    font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
     overflow: scroll;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
   }
 
   p {

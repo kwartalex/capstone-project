@@ -3,27 +3,43 @@ import styled from 'styled-components/macro'
 
 export default function EntriesAll ({entries, onDeleteClick}) {
     return (
-        <ul>
+        <section>
             {entries && entries.map((entry) => (
-                <li key={entry.name}>
-                   <EntryStyled>{entry}</EntryStyled> 
-                   <span onClick={() => onDeleteClick(entry.name)}>x</span>
-                </li>
+                <div key={entry.name}>
+                   <EntryStyled>
+                    {entry}
+                    <DeleteBtnStyled onClick={() => onDeleteClick(entry.name)}>x</DeleteBtnStyled>
+                    </EntryStyled> 
+                </div>
             ))}
-        </ul>
+        </section>
+        
     )
 }
 
 const EntryStyled = styled.section`
-    margin: 20px auto 20px;
-    padding: 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px;
+    width: 80vw;
+    padding: 20px;
     border: none;
+    font-weight: 300;
+    letter-spacing: 0.0625em;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    text-align: justify;
+    position: relative;
 `
+const DeleteBtnStyled = styled.span`    
+    position: absolute;
+    top: 4px;
+    right: 8px;
+`
+
+
   

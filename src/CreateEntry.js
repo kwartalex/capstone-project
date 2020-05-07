@@ -37,14 +37,14 @@ const InputStyled = styled.textarea`
     align-items: center;
     justify-content: center;
     margin: 100px auto 10px;
-    border: 2px solid var(--primary);
-    background: var(--tertiary);
-    color: var(--quinary);
-    caret-color: var(--primary);
     border-radius: 8px;
     height: 40vh;
     width: 64vw;
     padding: 20px;
+    border: 2px solid var(--primary);
+    background: var(--tertiary);
+    color: var(--quinary);
+    caret-color: var(--primary);
     font-size: 18px;
     font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
     overflow-wrap: break-word;
