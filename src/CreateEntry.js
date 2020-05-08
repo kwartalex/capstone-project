@@ -5,6 +5,7 @@ import Button from './Button'
 export default function CreateEntry ({ handleSubmit }) {
 
     const [entry, setEntry] = useState('')
+    const [btnActivated, setIsActivated] = useState(false)
     const inputRef = useRef() 
     
     return (
@@ -20,7 +21,7 @@ export default function CreateEntry ({ handleSubmit }) {
                 value={entry}
                 required
                 />
-                <Button/>
+                <Button active={btnActivated}/>
             </form>
         </section>
     )
@@ -30,10 +31,8 @@ export default function CreateEntry ({ handleSubmit }) {
         handleSubmit(entry)
         setEntry('')
         inputRef.current.focus()
+        setIsActivated(!btnActivated)
     }
-
-    // function resetColor() {
-    //     setColor(var(--senary))
 }
 
 const InputStyled = styled.textarea`
