@@ -11,11 +11,12 @@ export default createGlobalStyle`
     --tertiary: #fff7f7; {/* offwhite */}
     --quaternary: #FFFFFF; {/* white */}
     --quinary: #495057; {/* grey */}
+    --senary: #DDA0DD; {/* plum */}
+    --septenary: #ffc942; {/ *orange */}
+
   }
 
   body {
-    display: flex;
-    justify-content: center;
     color: var(--quaternary);
     background: var(--primary);
     margin: 0;
