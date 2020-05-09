@@ -27,6 +27,7 @@ const EntryStyled = styled.section`
     border: none;
     font-weight: 300;
     letter-spacing: 0.0625em;
+    text-align: left
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;

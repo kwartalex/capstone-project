@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CreateEntry from './CreateEntry'
 import EntriesAll from './EntriesAll'
+import Header from './Header'
 import { loadEntry, saveEntry } from './LocalStorage'
 
 export default function App () {
@@ -13,6 +14,7 @@ export default function App () {
 
     return (
         <>
+        <Header/>
         <CreateEntry handleSubmit = {addEntry}/>
         <EntriesAll entries = {entries} onDeleteClick={deleteEntry}/>
         </>

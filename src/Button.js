@@ -14,7 +14,7 @@ const ButtonStyled = styled.button`
     justify-content: center;
     border-radius: 8px;
     padding: 0.5rem;
-    margin: 20px auto 10px;
+    margin: 24px auto 10px;
     width: 10rem;
     background: ${props => props.styleActivated ? "var(--senary)" : "var(--secondary)"};
     color: var(--quaternary);
