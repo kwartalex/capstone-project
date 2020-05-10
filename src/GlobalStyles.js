@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components/macro'
 export default createGlobalStyle`
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   :root{
@@ -20,6 +22,7 @@ export default createGlobalStyle`
     color: var(--quaternary);
     background: var(--primary);
     margin: 0;
+    padding-bottom: 60px;
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
     overflow: scroll;
