@@ -13,7 +13,6 @@ export default function Header () {
 
 const HeaderStyled = styled.header`
     position: fixed;
-    position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
@@ -24,4 +23,5 @@ const HeaderStyled = styled.header`
     text-align: center;
     font-size: 24px;
     background: var(--senary);
+    opacity: 0.9;
 `

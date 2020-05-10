@@ -13,17 +13,15 @@ export default function EntriesAll ({entries, onDeleteClick}) {
                 </div>
             ))}
         </section>
-        
     )
 }
 
 const EntryStyled = styled.section`
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 20px auto 10px;
+    margin: 12px auto 12px;
     width: 80vw;
-    padding: 16px;
+    padding: 12px;
     border: none;
     font-weight: 300;
     letter-spacing: 0.0625em;
