@@ -3,11 +3,9 @@ import styled from 'styled-components/macro'
 
 export default function Header () {
     return (
-    <section>
         <HeaderStyled>
         YAY!
         </HeaderStyled>
-    </section>
     )
 }
 

@@ -3,11 +3,9 @@ import styled from 'styled-components/macro'
 
 export default function Navigation () {
     return (
-        <nav>
             <NavigationStyled>
                 AWESOME DAY
             </NavigationStyled>
-        </nav>  
     )
 }
 

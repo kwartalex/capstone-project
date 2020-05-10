@@ -17,7 +17,7 @@ export default function App () {
         <>
         <Header/>
         <CreateEntry handleSubmit = {addEntry}/>
-        <EntriesAll entries = {entries} onDeleteClick={deleteEntry}/>
+        <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
         <Navigation/>
         </>
     )
@@ -26,9 +26,9 @@ export default function App () {
         setEntries([newEntry, ...entries])
     }
 
-    function deleteEntry(deletedEntry) {
-        const index = entries.findIndex((entry) => entry === deletedEntry)
-        setEntries([...entries.slice(0, index, + 1)])
+    function deleteEntry(entry) {
+        const index = entries.indexOf(entry)
+        setEntries([...entries.slice(0, index), ...entries.slice(index + 1)])
       }
 }
 
