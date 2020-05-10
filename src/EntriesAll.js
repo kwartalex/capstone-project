@@ -5,10 +5,10 @@ export default function EntriesAll ({entries, onDeleteClick}) {
     return (
         <section>
             {entries && entries.map((entry) => (
-                <div key={entry.name}>
+                <div>
                    <EntryStyled>
                     {entry}
-                    <DeleteBtnStyled onClick={() => onDeleteClick(entry.name)}>x</DeleteBtnStyled>
+                    <DeleteBtnStyled onClick={() => onDeleteClick(entry)}>x</DeleteBtnStyled>
                     </EntryStyled> 
                 </div>
             ))}
