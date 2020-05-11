@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import styled from 'styled-components/macro'
-import Button from './Button'
+import Button from '../components/Button'
 
 export default function CreateEntry ({ handleSubmit }) {
 
@@ -9,7 +9,7 @@ export default function CreateEntry ({ handleSubmit }) {
     const inputRef = useRef() 
     
     return (
-        <section>
+        <>
             <form onSubmit={onSubmit}>
                 <InputStyled 
                 autoFocus={true}
@@ -23,7 +23,7 @@ export default function CreateEntry ({ handleSubmit }) {
                 />
                 <Button active={btnActivated}/>
             </form>
-        </section>
+        </>
     )
 
     function onSubmit(event){
