@@ -39,6 +39,6 @@ opacity: 0.9;
 `
 const LinkStyled = styled(NavLink)`
 text-align: center;
-&.selected: var(--septenary);
+&.selected: var(--primary);
 `
 
