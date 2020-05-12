@@ -9,12 +9,12 @@ export default function Navigation () {
                 <LinkStyled
                 activeClassName="selected"
                 to="/entriesall"
-                >READ
+                >
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
-                >WRITE
+                >
                 </LinkStyled>
             </NavigationStyled>
         </>

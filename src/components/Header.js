@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 export default function Header () {
     return (
         <HeaderStyled>
-        YAY!
+        <img src="../images/yay_logo_orange_84x84.png" alt="" />
         </HeaderStyled>
     )
 }
@@ -15,11 +15,7 @@ const HeaderStyled = styled.header`
     top: 0;
     z-index: 1;
     margin: 0;
-    padding: 12px;
     width: 100vw;
     height: 48px;
     text-align: center;
-    font-size: 24px;
-    background: var(--senary);
-    opacity: 0.9;
 `

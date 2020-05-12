@@ -9,7 +9,6 @@ export default function CreateEntry ({ handleSubmit }) {
     const inputRef = useRef() 
     
     return (
-        <>
             <form onSubmit={onSubmit}>
                 <InputStyled 
                 autoFocus={true}
@@ -23,7 +22,6 @@ export default function CreateEntry ({ handleSubmit }) {
                 />
                 <Button active={btnActivated}/>
             </form>
-        </>
     )
 
     function onSubmit(event){
