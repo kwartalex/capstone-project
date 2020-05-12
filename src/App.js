@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import CreateEntry from './CreateEntry'
-import EntriesAll from './EntriesAll'
-import Header from './Header'
-import Navigation from './Navigation'
+import { Switch, Route } from 'react-router-dom'
+import GlobalStyles from './GlobalStyles'
+import CreateEntry from './pages/CreateEntry'
+import EntriesAll from './pages/EntriesAll'
+import Header from './components/Header'
+import Navigation from './components/Navigation'
 import { loadEntry, saveEntry } from './LocalStorage'
 
 export default function App () {
@@ -15,9 +17,16 @@ export default function App () {
 
     return (
         <>
+        <GlobalStyles />
         <Header/>
-        <CreateEntry handleSubmit = {addEntry}/>
-        <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
+        <Switch>
+            <Route exact path="/createentry">
+                <CreateEntry handleSubmit = {addEntry}/>
+            </Route>
+            <Route path="/entriesall">
+                <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
+            </Route>
+        </Switch>
         <Navigation/>
         </>
     )

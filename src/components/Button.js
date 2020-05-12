@@ -16,8 +16,9 @@ const ButtonStyled = styled.button`
     padding: 8px;
     margin: 24px auto 16px;
     width: 10rem;
-    background: ${props => props.styleActivated ? "var(--senary)" : "var(--secondary)"};
+    background: ${props => props.styleActivated ? "var(--senary)" : "var(--septenary)"};
     color: var(--quaternary);
     font-size: 18px;
     border: none;
+    box-shadow: 0  12px 10px -10px rgba(0, 0, 0, 0.4)
 `

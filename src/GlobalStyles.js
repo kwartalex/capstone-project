@@ -21,7 +21,7 @@ export default createGlobalStyle`
   body {
     color: var(--quaternary);
     background: var(--primary);
-    margin: 0;
+    margin: 60px 0;
     padding-bottom: 60px;
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
