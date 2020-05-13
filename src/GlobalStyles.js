@@ -21,7 +21,7 @@ export default createGlobalStyle`
   body {
     color: var(--quaternary);
     background: var(--primary);
-    margin: 60px 0;
+    margin: 64px 0;
     padding-bottom: 60px;
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
@@ -37,4 +37,5 @@ export default createGlobalStyle`
     list-style-type: none;
     font-size: 18px;
   }
+
 `
