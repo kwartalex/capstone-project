@@ -4,7 +4,7 @@ import GlobalStyles from './GlobalStyles'
 import CreateEntry from './pages/CreateEntry'
 import EntriesAll from './pages/EntriesAll'
 import Header from './components/Header'
-import Navigation from './components/Navigation'
+import Navigation from './components/Footer'
 import { loadEntry, saveEntry } from './LocalStorage'
 
 export default function App () {
