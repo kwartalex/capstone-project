@@ -15,7 +15,7 @@ export default function CreateEntry ({ handleSubmit }) {
                 ref={inputRef}
                 type="text"
                 name="entry"
-                placeholder="My favorite moment of the day was when ..."
+                placeholder="My favorite moment of the day was ..."
                 onChange={(event) => setEntry(event.target.value)}
                 value={entry}
                 required
