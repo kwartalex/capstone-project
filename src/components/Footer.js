@@ -9,12 +9,14 @@ export default function Navigation () {
                 <LinkStyled
                 activeClassName="selected"
                 to="/entriesall"
-                ><img src="../images/create.png" alt="" />
+                data-testid="entriesall-link"
+                ><img src="../images/create.png" alt="linkread" />
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
-                ><img src="../images/read.png" alt="" />
+                data-testid="createentry-link"
+                ><img src="../images/read.png" alt="linkcreate" />
                 </LinkStyled>
             </FooterStyled>
         </>
