@@ -19,6 +19,8 @@ export default function CreateEntry ({ handleSubmit }) {
                 onChange={(event) => setEntry(event.target.value)}
                 value={entry}
                 required
+                minLength="10"
+                maxLength="400"
                 />
                 <Button active={btnActivated}/>
             </form>
