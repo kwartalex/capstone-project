@@ -29,5 +29,6 @@ test('that I can navigate to createpage using navlink', () => {
     userEvent.click(readlink)
     expect(getByAltText(/linkcreate/i)).toBeInTheDocument()
     userEvent.click(createlink)
+    expect(getByAltText(/linkread/i)).toBeInTheDocument()
 }
 )
