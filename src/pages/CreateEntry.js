@@ -9,7 +9,7 @@ export default function CreateEntry ({ handleSubmit }) {
     const inputRef = useRef() 
     
     return (
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} data-cy="create_entry">
                 <InputStyled 
                 autoFocus={true}
                 ref={inputRef}
