@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 export default function Header () {
     return (
         <HeaderStyled>
-        <img src="../images/yay_logo_orange_84x84.png" alt="" />
+        <img src="../images/yay_logo_orange.png" alt="" />
         </HeaderStyled>
     )
 }
@@ -18,4 +18,8 @@ const HeaderStyled = styled.header`
     width: 100vw;
     height: 48px;
     text-align: center;
+    
+    img {
+        height: 96px;
+        }
 `

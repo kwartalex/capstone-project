@@ -1,14 +1,9 @@
-describe('after submit a new entry is added to the map and the textarea is cleared', () => {
-    it('the form is cleared after submit', () => {
-        cy.visit('/createentry')
-
-        cy.get('[data-cy="create_entry]')
-        cy.get('input[name="entry"]').type('Es war sonnig und warm.')
-    })
-
+describe('after submit a new entry is added to the map', () => {
     it('a new entry is created', () => {
+        cy.visit('/createentry')
+        cy.get('[data-cy="create_entry"]').type('Es war sonnig und warm.')
+        cy.get('[data-cy="submit_entry"]').submit()
         cy.visit('/entriesall')
-
-        cy.contains('Es war sonnig und warm.').should('exist')
+        cy.get('[data-cy="read_entry"]').contains('Es war sonnig und warm').should("exist")
     })
 })

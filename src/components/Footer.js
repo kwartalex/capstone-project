@@ -11,14 +11,14 @@ export default function Navigation () {
                 to="/entriesall"
                 data-testid="entriesall-link"
                 data-cy="allentries_icon"
-                ><img src="../images/create.png" alt="linkread" />
+                ><img src="../images/nav_create.png" alt="linkread" />
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
                 data-testid="createentry-link"
                 data-cy="create_icon"
-                ><img src="../images/read.png" alt="linkcreate" />
+                ><img src="../images/nav_read.png" alt="linkcreate" />
                 </LinkStyled>
             </FooterStyled>
         </>
@@ -37,12 +37,16 @@ const FooterStyled = styled.footer `
     height: 80px;
     background: var(--secondary);
     opacity: 0.9;
+
+    img {
+        height: 80px;
+        }
     `
 
 const LinkStyled = styled(NavLink)`
     text-align: center;
     &.selected {
-        background: var(--senary);
+        background: var(--septenary);
     } 
     `
 

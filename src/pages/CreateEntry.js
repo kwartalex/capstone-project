@@ -9,7 +9,7 @@ export default function CreateEntry ({ handleSubmit }) {
     const inputRef = useRef() 
     
     return (
-            <form onSubmit={onSubmit} data-cy="create_entry">
+            <form onSubmit={onSubmit} data-cy="submit_entry">
                 <InputStyled 
                 autoFocus={true}
                 ref={inputRef}
@@ -21,8 +21,11 @@ export default function CreateEntry ({ handleSubmit }) {
                 required
                 minLength="10"
                 maxLength="400"
+                data-cy="create_entry"
                 />
-                <Button active={btnActivated}/>
+                <Button 
+                active={btnActivated}
+            />
             </form>
     )
 
@@ -39,9 +42,9 @@ const InputStyled = styled.textarea`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px auto 10px;
+    margin: 120px auto 20px;
     border-radius: 8px;
-    height: 40vh;
+    height: 44vh;
     width: 64vw;
     padding: 20px;
     border: 2px solid var(--primary);

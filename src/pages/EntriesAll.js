@@ -5,7 +5,7 @@ export default function EntriesAll ({entries, onDeleteClick}) {
     return (
         <section>
             {entries && entries.map((entry) => (
-                <div>
+                <div data-cy="read_entry">
                    <EntryStyled>
                     {entry}
                     <DeleteBtnStyled onClick={() => onDeleteClick(entry)}>x</DeleteBtnStyled>
