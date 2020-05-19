@@ -16,7 +16,7 @@ const HeaderStyled = styled.header`
     z-index: 1;
     margin: 0;
     width: 100vw;
-    height: 48px;
+    height: 100px;
     text-align: center;
     
     img {

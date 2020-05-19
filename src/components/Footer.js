@@ -11,14 +11,14 @@ export default function Navigation () {
                 to="/entriesall"
                 data-testid="entriesall-link"
                 data-cy="allentries_icon"
-                ><img src="../images/nav_create.png" alt="linkread" />
+                ><img src="../images/nav_create.png" alt="link to entries page" />
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
                 data-testid="createentry-link"
                 data-cy="create_icon"
-                ><img src="../images/nav_read.png" alt="linkcreate" />
+                ><img src="../images/nav_read.png" alt="link to create page" />
                 </LinkStyled>
             </FooterStyled>
         </>
