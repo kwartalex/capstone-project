@@ -7,6 +7,10 @@ export default {
   component: Button,
 };
 
-export const ButtonUnclicked = () => (
-  <Button/>
+export const BtnUnclicked = () => (
+  <Button />
+);
+
+export const BtnClicked = () => (
+  <Button active={action('onClick')}></Button> 
 );
