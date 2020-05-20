@@ -6,26 +6,28 @@ export default function CreateEntry ({ handleSubmit }) {
 
     const [entry, setEntry] = useState('')
     const [btnActivated, setIsActivated] = useState(false)
+    const [submitted, setIsSubmitted] = useState(false)
     const inputRef = useRef() 
     
     return (
             <form onSubmit={onSubmit} data-cy="submit_entry">
                 <InputStyled 
-                autoFocus={true}
-                ref={inputRef}
-                type="text"
-                name="entry"
-                placeholder="My favorite moment of the day was ..."
-                onChange={(event) => setEntry(event.target.value)}
-                value={entry}
-                required
-                minLength="10"
-                maxLength="400"
-                data-cy="create_entry"
+                    autoFocus={true}
+                    ref={inputRef}
+                    type="text"
+                    name="entry"
+                    placeholder="My favorite moment of the day was ..."
+                    onChange={(event) => setEntry(event.target.value)}
+                    value={entry}
+                    required
+                    minLength="10"
+                    maxLength="300"
+                    data-cy="create_entry"
                 />
-                <Button 
-                active={btnActivated}
-            />
+                {submitted}
+                {submitted == true && entry.length <=10 && <div>Zu wenig Zeichen</div>}
+                {submitted == true && entry.length >=300 && <div>Zu viele Zeichen</div>}
+                <Button active={btnActivated}/>
             </form>
     )
 
@@ -35,6 +37,8 @@ export default function CreateEntry ({ handleSubmit }) {
         setEntry('')
         inputRef.current.focus()
         setIsActivated(!btnActivated)
+        setIsSubmitted(true)
+    
     }
 }
 

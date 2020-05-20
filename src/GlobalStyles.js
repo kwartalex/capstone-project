@@ -30,12 +30,5 @@ export default createGlobalStyle`
 
   p {
     line-height: 150%;
-    font-size: 18px;
   }
-
-  li {
-    list-style-type: none;
-    font-size: 18px;
-  }
-
 `

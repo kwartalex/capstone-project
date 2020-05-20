@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import GlobalStyles from './GlobalStyles'
+import Home from './pages/Home'
 import CreateEntry from './pages/CreateEntry'
 import EntriesAll from './pages/EntriesAll'
 import Header from './components/Header'
@@ -20,7 +21,10 @@ export default function App () {
         <GlobalStyles />
         <Header/>
         <Switch>
-            <Route exact path="/createentry">
+            <Route exact path="/home">
+                <Home/>
+            </Route>
+            <Route path="/createentry">
                 <CreateEntry handleSubmit = {addEntry}/>
             </Route>
             <Route path="/entriesall">

@@ -6,6 +6,13 @@ export default function Navigation () {
     return (
         <>
             <FooterStyled role="footer">
+            <LinkStyled
+                activeClassName="selected"
+                to="/home"
+                data-testid="home-link"
+                data-cy="home_icon"
+                ><img src="../images/nav_home.png" alt="link to home page" />
+                </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/entriesall"
@@ -27,7 +34,7 @@ export default function Navigation () {
 
 const FooterStyled = styled.footer `
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -35,18 +42,35 @@ const FooterStyled = styled.footer `
     margin: 0;
     width: 100vw;
     height: 80px;
-    background: var(--secondary);
-    opacity: 0.9;
+    background: transparent;
+    cursor: auto;
 
     img {
-        height: 80px;
+        height: 76px;
         }
     `
 
 const LinkStyled = styled(NavLink)`
     text-align: center;
     &.selected {
-        background: var(--septenary);
+        img {
+            animation: bounce 0.3s;
+            -webkit-animation: bounce 0.3s;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+          
+          @keyframes bounce {
+            from {
+              margin-top: 0;
+            }
+            to {
+              margin-top: -24px;
+            }
+          }
+        }
     } 
     `
-
