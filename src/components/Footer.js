@@ -40,8 +40,9 @@ const FooterStyled = styled.footer `
     bottom: 0;
     z-index: 1;
     margin: 0;
+    padding: -20px;
     width: 100vw;
-    height: 80px;
+    height: 90px;
     background: transparent;
     cursor: auto;
 
@@ -54,7 +55,7 @@ const LinkStyled = styled(NavLink)`
     text-align: center;
     &.selected {
         img {
-            animation: bounce 0.3s;
+            animation: bounce linear 0.3s;
             -webkit-animation: bounce 0.3s;
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);

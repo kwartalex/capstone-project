@@ -4,15 +4,21 @@ import styled from 'styled-components/macro'
 export default function Home() {
     return (
             <>
-            <ImageStyled src="../images/awesomeday.png" alt="Welcomeimage" />
-            <p>klala</p>
+            <StyledImage>
+                <img 
+                height="350px" 
+                width="auto"               
+                src="../images/awesomeday.png" alt="Welcomeimage" />
+            </StyledImage>
+            <p>Awesome Day!</p>
             </>
     )}
 
-const ImageStyled = styled.image `
-    margin-top: 2000px;
-    img {
-        height: 200px;
-        }
-`
+    const StyledImage = styled.div `
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    `
+
+
 
