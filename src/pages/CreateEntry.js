@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import Button from '../components/Button'
 
@@ -7,13 +7,11 @@ export default function CreateEntry ({ handleSubmit }) {
     const [entry, setEntry] = useState('')
     const [btnActivated, setIsActivated] = useState(false)
     const [submitted, setIsSubmitted] = useState(false)
-    const inputRef = useRef() 
-    
+
     return (
             <form onSubmit={onSubmit} data-cy="submit_entry">
                 <InputStyled 
                     autoFocus={true}
-                    ref={inputRef}
                     type="text"
                     name="entry"
                     placeholder="My favorite moment of the day was ..."
@@ -35,7 +33,6 @@ export default function CreateEntry ({ handleSubmit }) {
         event.preventDefault()
         handleSubmit(entry)
         setEntry('')
-        inputRef.current.focus()
         setIsActivated(!btnActivated)
         setIsSubmitted(true)
     

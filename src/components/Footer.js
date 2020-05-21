@@ -1,6 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import CreateIcon from '../images/nav_create.png'
+import HomeIcon from '../images/nav_home.png'
+import ReadIcon from '../images/nav_read.png'
 
 export default function Navigation () {
     return (
@@ -11,21 +14,21 @@ export default function Navigation () {
                 to="/home"
                 data-testid="home-link"
                 data-cy="home_icon"
-                ><img src="../images/nav_home.png" alt="link to home page" />
+                ><img src={HomeIcon} alt="link to home page" />
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/entriesall"
                 data-testid="entriesall-link"
                 data-cy="allentries_icon"
-                ><img src="../images/nav_create.png" alt="link to entries page" />
+                ><img src={ReadIcon} alt="link to entries page" />
                 </LinkStyled>
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
                 data-testid="createentry-link"
                 data-cy="create_icon"
-                ><img src="../images/nav_read.png" alt="link to create page" />
+                ><img src={CreateIcon} alt="link to create page" />
                 </LinkStyled>
             </FooterStyled>
         </>

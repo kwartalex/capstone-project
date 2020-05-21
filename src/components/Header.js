@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import HeaderIcon from '../images/yay_logo_orange.png'
 
 export default function Header () {
     return (
         <HeaderStyled>
-        <img src="../images/yay_logo_orange.png" alt="" />
+        <img src={HeaderIcon} alt="" />
         </HeaderStyled>
     )
 }
