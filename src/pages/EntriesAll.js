@@ -1,12 +1,14 @@
 import React from 'react'
 import { RiDeleteBin7Line } from 'react-icons/ri';
-import styled from 'styled-components/macro'
+import styled from 'styled-components/macro';
+import Divider from '../components/Divider'
 
 export default function EntriesAll ({entries, onDeleteClick}) {
     return (
         <SectionStyled>
             {entries && entries.map((entry) => (
                 <div data-cy="read_entry">
+                    <Divider />
                    <EntryStyled>
                     {entry}
                         <DeleteBtnStyled alt="Delete entry" onClick={() => onDeleteClick(entry)}/>
@@ -38,6 +40,12 @@ const EntryStyled = styled.section`
     -ms-hyphens: auto;
     hyphens: auto;
     position: relative;
+
+    ::first-Letter {
+        color: var(--senary);
+        font-size: 22px;
+        font-weight:360;
+    }
 `
 
 const DeleteBtnStyled = styled(RiDeleteBin7Line)`
