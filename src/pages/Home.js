@@ -18,6 +18,7 @@ export default function Home() {
         justify-content: center;
         margin-bottom: 90px;  
         padding: 20px; 
+        overflow: hidden;
     `
 
     const StyledParagraph = styled.p `

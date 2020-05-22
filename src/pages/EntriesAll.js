@@ -1,29 +1,34 @@
 import React from 'react'
+import { RiDeleteBin7Line } from 'react-icons/ri';
 import styled from 'styled-components/macro'
 
 export default function EntriesAll ({entries, onDeleteClick}) {
     return (
-        <section>
+        <SectionStyled>
             {entries && entries.map((entry) => (
                 <div data-cy="read_entry">
                    <EntryStyled>
                     {entry}
-                    <DeleteBtnStyled onClick={() => onDeleteClick(entry)}>x</DeleteBtnStyled>
+                        <DeleteBtnStyled alt="Delete entry" onClick={() => onDeleteClick(entry)}/>
                     </EntryStyled> 
                 </div>
             ))}
-        </section>
+        </SectionStyled>
     )
 }
 
-const EntryStyled = styled.section`
+const SectionStyled = styled.section `
     display: flex;
-    align-items: center;
+    flex-direction: column;
+`
+
+
+const EntryStyled = styled.section`
     margin: 12px auto 12px;
     width: 80vw;
     padding: 12px;
     border: none;
-    font-weight: 300;
+    font-weight: 220;
     letter-spacing: 0.0625em;
     text-align: left
     word-wrap: break-word;
@@ -34,10 +39,13 @@ const EntryStyled = styled.section`
     hyphens: auto;
     position: relative;
 `
-const DeleteBtnStyled = styled.span`    
+
+const DeleteBtnStyled = styled(RiDeleteBin7Line)`
     position: absolute;
-    top: 4px;
-    right: 8px;
+    top: -6px;
+    right: -4px;
+    fill: var(--septenary);
+
 `
 
 
