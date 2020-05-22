@@ -5,6 +5,7 @@ import Welcome from '../images/awesomeday.png'
 export default function Home() {
     return (
             <>
+            <StyledParagraph>THAT WAS AN AWESOME DAY!</StyledParagraph>
             <StyledImage>
                 <img              
                 src={Welcome} alt="Welcomeimage" />
@@ -14,11 +15,17 @@ export default function Home() {
 
     const StyledImage = styled.div `
         display: flex;
-        align-items: center;
-        justify-content: center;   
-        height="350px" 
-        width="auto"      
+        justify-content: center;
+        margin-bottom: 90px;  
+        padding: 20px; 
     `
+
+    const StyledParagraph = styled.p `
+        font-weight: lighter;
+        font-size: 24px;
+        margin-top: 140px; 
+    `
+
 
 
 

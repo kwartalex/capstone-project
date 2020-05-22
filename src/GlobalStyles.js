@@ -29,6 +29,10 @@ export default createGlobalStyle`
   }
 
   p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--septenary);
     line-height: 150%;
   }
 `
