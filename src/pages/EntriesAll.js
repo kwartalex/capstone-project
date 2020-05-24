@@ -8,11 +8,11 @@ export default function EntriesAll ({entries, onDeleteClick}) {
         <SectionStyled>
             {entries && entries.map((entry) => (
                 <div data-cy="read_entry">
-                    <Divider />
                    <EntryStyled>
                     {entry}
                         <DeleteBtnStyled alt="Delete entry" onClick={() => onDeleteClick(entry)}/>
                     </EntryStyled> 
+                    <Divider />
                 </div>
             ))}
         </SectionStyled>

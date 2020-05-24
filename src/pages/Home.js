@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import Welcome from '../images/awesomeday.png'
+import welcome from '../images/awesomeday.png'
 
 export default function Home() {
     return (
@@ -8,7 +8,7 @@ export default function Home() {
             <StyledParagraph>THAT WAS AN AWESOME DAY!</StyledParagraph>
             <StyledImage>
                 <img              
-                src={Welcome} alt="Welcomeimage" />
+                src={welcome} alt="Welcomeimage" />
             </StyledImage>
             </>
     )}
