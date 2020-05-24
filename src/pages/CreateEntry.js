@@ -22,9 +22,7 @@ export default function CreateEntry ({ handleSubmit }) {
                     maxLength="300"
                     data-cy="create_entry"
                 />
-                {submitted}
-                {submitted == true && entry.length <=10 && <div>Zu wenig Zeichen</div>}
-                {submitted == true && entry.length >=300 && <div>Zu viele Zeichen</div>}
+                
                 <Button active={btnActivated}/>
             </form>
     )

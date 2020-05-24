@@ -56,6 +56,7 @@ const FooterStyled = styled.footer `
 
 const LinkStyled = styled(NavLink)`
     text-align: center;
+    cursor: nw-resize;
     &.selected {
         img {
             animation: bounce linear 0.3s;
