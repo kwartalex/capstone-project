@@ -18,7 +18,8 @@ const ButtonStyled = styled.button`
     width: 10rem;
     background: ${props => props.styleActivated ? "var(--senary)" : "var(--septenary)"};
     color: var(--quaternary);
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
     border: none;
     box-shadow: 0  12px 10px -10px rgba(0, 0, 0, 0.4)
 `

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import welcome from '../images/awesomeday.png'
 
-export default function Home() {
+export default function home() {
     return (
             <>
             <StyledParagraph>THAT WAS AN AWESOME DAY!</StyledParagraph>
