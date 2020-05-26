@@ -4,25 +4,27 @@ import styled from 'styled-components/macro'
 export default function PicRotation () {
     return (
             <>
-            <StyledParagraphTop>HAPPY PICTURE OF THE DAY!</StyledParagraphTop>
-            <StyledImage>
-                <img              
-                src="https://source.unsplash.com/featured/?puppy" alt="Happy picture of the day" />
-            </StyledImage>
+            <StyledParagraphTop>HAPPY PICTURE OF THE DAY</StyledParagraphTop>
+                <StyledImage>
+                    <img              
+                    src="https://source.unsplash.com/featured/?puppy" alt="" />
+                </StyledImage>
             <StyledParagraphBottom>Bitterness keeps you from flying!</StyledParagraphBottom>
             </>
     )}
 
     const StyledParagraphTop = styled.p `
         font-weight: lighter;
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 0.05em;
         margin-top: 140px; 
     `
 
     const StyledParagraphBottom = styled.p `
-    font-weight: lighter;
-    font-size: 24px;
-`
+        font-weight: lighter;
+        font-size: 22px;
+        letter-spacing: 0.05em;
+    `
 
     const StyledImage = styled.p `
         overflow: hidden;

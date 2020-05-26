@@ -44,7 +44,7 @@ const EntryStyled = styled.section`
     ::first-Letter {
         color: var(--senary);
         font-size: 22px;
-        font-weight:360;
+        font-weight: 380;
     }
 `
 

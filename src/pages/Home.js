@@ -23,7 +23,8 @@ export default function home() {
 
     const StyledParagraph = styled.p `
         font-weight: lighter;
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 0.05em;
         margin-top: 140px; 
     `
 

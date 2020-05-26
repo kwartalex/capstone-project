@@ -40,7 +40,7 @@ export default function Navigation () {
                 to="/happypic"
                 data-testid="happypic-link"
                 data-cy="happypic_icon">
-                <img src={HappyPicIcon} alt="link to happyic page" />
+                <img src={HappyPicIcon} alt="link to happypic page" />
                 </LinkStyled>
 
             </FooterStyled>
@@ -72,8 +72,8 @@ const LinkStyled = styled(NavLink) `
     cursor: nw-resize;
     &.selected {
         img {
-            animation: bounce linear 0.3s;
-            -webkit-animation: bounce 0.3s;
+            animation: bounce linear 0.15s;
+            -webkit-animation: bounce 0.15s;
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);
             -ms-transform: scale(1.2);
