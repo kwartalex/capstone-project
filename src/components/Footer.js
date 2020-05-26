@@ -72,8 +72,8 @@ const LinkStyled = styled(NavLink) `
     cursor: nw-resize;
     &.selected {
         img {
-            animation: bounce linear 0.15s;
-            -webkit-animation: bounce 0.15s;
+            animation: bounce ease 1s;
+            -webkit-animation: bounce ease 1s;
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);
             -ms-transform: scale(1.2);
@@ -86,7 +86,7 @@ const LinkStyled = styled(NavLink) `
               margin-top: 0;
             }
             to {
-              margin-top: -24px;
+              margin-top: -12px;
             }
           }
         }

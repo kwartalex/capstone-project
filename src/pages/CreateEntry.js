@@ -52,6 +52,7 @@ const InputStyled = styled.textarea`
     caret-color: var(--primary);
     font-size: 20px;
     font-weight: 300;
+    text-align: center;
     letter-spacing: 0.05em;
     font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
     overflow-wrap: break-word;

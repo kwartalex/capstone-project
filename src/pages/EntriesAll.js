@@ -26,10 +26,9 @@ const SectionStyled = styled.section `
 
 
 const EntryStyled = styled.section`
-    margin: 12px auto 12px;
     width: 80vw;
+    margin: 12px auto 12px;
     padding: 12px;
-    border: none;
     font-weight: 220;
     letter-spacing: 0.0625em;
     text-align: left
@@ -50,8 +49,8 @@ const EntryStyled = styled.section`
 
 const DeleteBtnStyled = styled(RiDeleteBin7Line)`
     position: absolute;
-    top: -6px;
-    right: -4px;
+    top: -4px;
+    right: -2px;
     fill: var(--septenary);
 
 `

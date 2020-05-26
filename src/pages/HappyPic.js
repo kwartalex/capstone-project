@@ -7,7 +7,7 @@ export default function PicRotation () {
             <StyledParagraphTop>HAPPY PICTURE OF THE DAY</StyledParagraphTop>
                 <StyledImage>
                     <img              
-                    src="https://source.unsplash.com/featured/?puppy" alt="" />
+                    src="https://source.unsplash.com/featured/?spring,flower" alt="" />
                 </StyledImage>
             <StyledParagraphBottom>Bitterness keeps you from flying!</StyledParagraphBottom>
             </>

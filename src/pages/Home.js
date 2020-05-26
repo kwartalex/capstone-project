@@ -19,6 +19,10 @@ export default function home() {
         margin-bottom: 90px;  
         padding: 20px; 
         overflow: hidden;
+
+        img {
+            animation: bounce 3s ease infinite alternate;
+        }    
     `
 
     const StyledParagraph = styled.p `
