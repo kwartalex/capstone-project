@@ -4,11 +4,13 @@ import styled from 'styled-components/macro'
 import CreateIcon from '../images/nav_create.png'
 import HomeIcon from '../images/nav_home.png'
 import ReadIcon from '../images/nav_read.png'
+import HappyPicIcon from '../images/nav_pic.png'
 
 export default function Navigation () {
     return (
         <>
             <FooterStyled role="footer">
+
             <LinkStyled
                 activeClassName="selected"
                 to="/home"
@@ -16,6 +18,7 @@ export default function Navigation () {
                 data-cy="home_icon"
                 ><img src={HomeIcon} alt="link to home page" />
                 </LinkStyled>
+
                 <LinkStyled
                 activeClassName="selected"
                 to="/entriesall"
@@ -23,6 +26,7 @@ export default function Navigation () {
                 data-cy="allentries_icon"
                 ><img src={ReadIcon} alt="link to entries page" />
                 </LinkStyled>
+
                 <LinkStyled
                 activeClassName="selected"
                 to="/createentry"
@@ -30,6 +34,15 @@ export default function Navigation () {
                 data-cy="create_icon"
                 ><img src={CreateIcon} alt="link to create page" />
                 </LinkStyled>
+
+                <LinkStyled
+                activeClassName="selected"
+                to="/happypic"
+                data-testid="happypic-link"
+                data-cy="happypic_icon">
+                <img src={HappyPicIcon} alt="link to happypic page" />
+                </LinkStyled>
+
             </FooterStyled>
         </>
     )
@@ -37,7 +50,7 @@ export default function Navigation () {
 
 const FooterStyled = styled.footer `
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -54,13 +67,13 @@ const FooterStyled = styled.footer `
         }
     `
 
-const LinkStyled = styled(NavLink)`
+const LinkStyled = styled(NavLink) `
     text-align: center;
     cursor: nw-resize;
     &.selected {
         img {
-            animation: bounce linear 0.3s;
-            -webkit-animation: bounce 0.3s;
+            animation: bounce linear 0.15s;
+            -webkit-animation: bounce 0.15s;
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);
             -ms-transform: scale(1.2);

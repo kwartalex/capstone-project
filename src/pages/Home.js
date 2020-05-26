@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import welcome from '../images/awesomeday.png'
 
-export default function Home() {
+export default function home() {
     return (
             <>
             <StyledParagraph>THAT WAS AN AWESOME DAY!</StyledParagraph>
@@ -23,7 +23,8 @@ export default function Home() {
 
     const StyledParagraph = styled.p `
         font-weight: lighter;
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 0.05em;
         margin-top: 140px; 
     `
 

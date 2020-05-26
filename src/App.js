@@ -4,6 +4,7 @@ import GlobalStyles from './GlobalStyles'
 import Home from './pages/Home'
 import CreateEntry from './pages/CreateEntry'
 import EntriesAll from './pages/EntriesAll'
+import HappyPic from './pages/HappyPic'
 import Header from './components/Header'
 import Navigation from './components/Footer'
 import { loadEntry, saveEntry } from './LocalStorage'
@@ -29,6 +30,9 @@ export default function App () {
             </Route>
             <Route path="/entriesall">
                 <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
+            </Route>
+            <Route path="/happypic">
+                <HappyPic/>
             </Route>
         </Switch>
         <Navigation/>
