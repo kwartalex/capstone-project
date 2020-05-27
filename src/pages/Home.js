@@ -16,7 +16,7 @@ export default function home() {
     const StyledImage = styled.div `
         display: flex;
         justify-content: center;
-        margin-bottom: 90px;  
+        margin-top: 60px;  
         padding: 20px; 
         overflow: hidden;
 
@@ -24,12 +24,11 @@ export default function home() {
             animation: bounce 3s ease infinite alternate;
         }    
     `
-
     const StyledParagraph = styled.p `
+        margin-top: 140px;     
         font-weight: lighter;
         font-size: 22px;
         letter-spacing: 0.05em;
-        margin-top: 140px; 
     `
 
 

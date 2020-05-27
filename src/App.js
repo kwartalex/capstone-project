@@ -21,20 +21,20 @@ export default function App () {
         <>
         <GlobalStyles />
         <Header/>
-        <Switch>
-            <Route exact path="/home">
-                <Home/>
-            </Route>
-            <Route path="/createentry">
-                <CreateEntry handleSubmit = {addEntry}/>
-            </Route>
-            <Route path="/entriesall">
-                <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
-            </Route>
-            <Route path="/happypic">
-                <HappyPic/>
-            </Route>
-        </Switch>
+            <Switch>
+                <Route exact path="/home">
+                    <Home/>
+                </Route>
+                <Route path="/createentry">
+                    <CreateEntry handleSubmit = {addEntry}/>
+                </Route>
+                <Route path="/entriesall">
+                    <EntriesAll entries={entries} onDeleteClick={deleteEntry}/>
+                </Route>
+                <Route path="/happypic">
+                    <HappyPic/>
+                </Route>
+            </Switch>
         <Navigation/>
         </>
     )

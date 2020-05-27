@@ -39,9 +39,9 @@ export default function CreateEntry ({ handleSubmit }) {
 
 const InputStyled = styled.textarea`
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 120px auto 28px;
+    align-items: center;
+    margin: 128px auto 28px;
     border-radius: 8px;
     height: 44vh;
     width: 64vw;
@@ -57,9 +57,9 @@ const InputStyled = styled.textarea`
     font-family: Raleway-Light, Helvetica Neue, Helvetica, sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    text-overflow: ellipsis;
     overflow: auto;
     white-space: normal;
-    text-overflow: ellipsis;
     resize: none;
 
     ::placeholder {

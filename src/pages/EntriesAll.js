@@ -22,37 +22,34 @@ export default function EntriesAll ({entries, onDeleteClick}) {
 const SectionStyled = styled.section `
     display: flex;
     flex-direction: column;
+    margin-top: 100px; 
 `
-
-
 const EntryStyled = styled.section`
+    position: relative;    
     width: 80vw;
-    margin: 12px auto 12px;
+    margin: 12px auto;
     padding: 12px;
     font-weight: 220;
     letter-spacing: 0.0625em;
     text-align: left
+    hyphens: auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto;
-    position: relative;
 
     ::first-Letter {
-        color: var(--senary);
         font-size: 22px;
         font-weight: 380;
+        color: var(--senary);
     }
 `
-
 const DeleteBtnStyled = styled(RiDeleteBin7Line)`
     position: absolute;
     top: -4px;
     right: -2px;
     fill: var(--septenary);
-
 `
 
 
