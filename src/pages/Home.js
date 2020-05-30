@@ -17,7 +17,6 @@ export default function home() {
     const StyledImage = styled.div `
         display: flex;
         justify-content: center; 
-        padding: 20px; 
         overflow: hidden;
 
         img {
@@ -25,6 +24,7 @@ export default function home() {
         }    
     `
     const StyledParagraph = styled.p `    
+        margin-top: 40px;
         font-weight: lighter;
         font-size: 22px;
         letter-spacing: 0.05em;
