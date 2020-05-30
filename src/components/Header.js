@@ -11,10 +11,6 @@ export default function Header () {
 }
 
 const HeaderStyled = styled.header`
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
     margin: 0;
     width: 100vw;
     height: 100px;

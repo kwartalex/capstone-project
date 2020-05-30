@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import GlobalStyles from './GlobalStyles'
+import styled from 'styled-components/macro'
 import Home from './pages/Home'
 import CreateEntry from './pages/CreateEntry'
 import EntriesAll from './pages/EntriesAll'
@@ -21,6 +22,7 @@ export default function App () {
         <>
         <GlobalStyles />
         <Header/>
+        <StyledMain>
             <Switch>
                 <Route exact path="/home">
                     <Home/>
@@ -35,6 +37,7 @@ export default function App () {
                     <HappyPic/>
                 </Route>
             </Switch>
+        </StyledMain>
         <Navigation/>
         </>
     )
@@ -48,4 +51,9 @@ export default function App () {
         setEntries([...entries.slice(0, index), ...entries.slice(index + 1)])
       }
 }
+
+const StyledMain = styled.main `
+    overflow: scroll;
+    `
+
 

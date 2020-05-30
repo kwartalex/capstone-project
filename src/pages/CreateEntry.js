@@ -41,7 +41,7 @@ const InputStyled = styled.textarea`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 128px auto 28px;
+    margin: 28px auto 28px;
     border-radius: 8px;
     height: 44vh;
     width: 64vw;

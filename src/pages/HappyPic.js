@@ -4,19 +4,22 @@ import styled from 'styled-components/macro'
 export default function PicRotation () {
     return (
             <HappyPicContainer>
-                <StyledParagraphTop>HAPPY PICTURE OF THE DAY</StyledParagraphTop>
+                <StyledParagraphTop>
+                    HAPPY PICTURE OF THE DAY
+                </StyledParagraphTop>
                     <StyledImage>
                         <img              
-                        src="https://source.unsplash.com/featured/?spring,flower" alt="" />
+                        src="https://source.unsplash.com/1600x900/?spring,blossom" alt="" />
                     </StyledImage>
-                <StyledParagraphBottom>Bitterness keeps you from flying!</StyledParagraphBottom>
+                <StyledParagraphBottom>
+                    Bitterness keeps you from flying!
+                </StyledParagraphBottom>
             </HappyPicContainer>
     )}
 
-    const HappyPicContainer = styled.div`
+    const HappyPicContainer = styled.main`
         display: flex;
         flex-direction: column;
-        height: 100vh;
         align-items: center;
         `
     
@@ -24,7 +27,7 @@ export default function PicRotation () {
         font-weight: lighter;
         font-size: 22px;
         letter-spacing: 0.05em;
-        margin-top: 140px; 
+        margin-top: 40px; 
         `
 
     const StyledParagraphBottom = styled.p `
@@ -43,7 +46,6 @@ export default function PicRotation () {
         margin-bottom: 40px;
 
         img {
-            height: 240px;
-            width:240px;
+            height: 100%;
         }
         `

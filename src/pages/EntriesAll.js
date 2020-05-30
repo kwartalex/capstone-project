@@ -6,14 +6,16 @@ import Divider from '../components/Divider'
 export default function EntriesAll ({entries, onDeleteClick}) {
     return (
         <SectionStyled>
-            {entries && entries.map((entry) => (
-                <div data-cy="read_entry">
-                   <EntryStyled>
-                    {entry}
-                        <DeleteBtnStyled alt="Delete entry" onClick={() => onDeleteClick(entry)}/>
-                    </EntryStyled> 
-                    <Divider />
-                </div>
+            {entries && 
+                entries.map((entry) => (
+                    <div data-cy="read_entry">
+                        <EntryStyled>
+                        {entry}
+                            <DeleteBtnStyled alt="Delete entry" onClick={() => onDeleteClick(entry)}
+                            />
+                        </EntryStyled> 
+                        <Divider />
+                    </div>
             ))}
         </SectionStyled>
     )
@@ -22,7 +24,6 @@ export default function EntriesAll ({entries, onDeleteClick}) {
 const SectionStyled = styled.section `
     display: flex;
     flex-direction: column;
-    margin-top: 100px; 
 `
 const EntryStyled = styled.section`
     position: relative;    
