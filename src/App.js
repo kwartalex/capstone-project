@@ -22,7 +22,7 @@ export default function App () {
         <>
         <GlobalStyles />
         <Header/>
-        <StyledMain>
+        <main>
             <Switch>
                 <Route exact path="/home">
                     <Home/>
@@ -37,7 +37,7 @@ export default function App () {
                     <HappyPic/>
                 </Route>
             </Switch>
-        </StyledMain>
+        </main>
         <Navigation/>
         </>
     )
@@ -52,8 +52,5 @@ export default function App () {
       }
 }
 
-const StyledMain = styled.main `
-    overflow: scroll;
-    `
 
 

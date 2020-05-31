@@ -37,4 +37,8 @@ export default createGlobalStyle`
     text-align: center;
     color: var(--septenary);
   }
+
+  main {
+    overflow: scroll;
+  }
 `
