@@ -5,27 +5,29 @@ import welcome from '../images/awesomeday.png'
 export default function home() {
     return (
             <>
-            <StyledParagraph>THAT WAS AN AWESOME DAY!</StyledParagraph>
+            <StyledParagraph>
+                THAT WAS AN AWESOME DAY!
+            </StyledParagraph>
             <StyledImage>
-                <img              
-                src={welcome} alt="Welcomeimage" />
+                <img src={welcome} alt="Welcomeimage" />
             </StyledImage>
             </>
     )}
 
     const StyledImage = styled.div `
         display: flex;
-        justify-content: center;
-        margin-bottom: 90px;  
-        padding: 20px; 
+        justify-content: center; 
         overflow: hidden;
-    `
 
-    const StyledParagraph = styled.p `
+        img {
+            animation: bounce 3s ease infinite alternate;
+        }    
+    `
+    const StyledParagraph = styled.p `    
+        margin-top: 40px;
         font-weight: lighter;
         font-size: 22px;
         letter-spacing: 0.05em;
-        margin-top: 140px; 
     `
 
 
